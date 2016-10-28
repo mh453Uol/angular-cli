@@ -1,0 +1,34 @@
+{
+  "name": "@angular-cli/core",
+  "version": "1.0.0",
+  "description": "Core library for the Angular CLI",
+  "main": "./src/index.js",
+  "keywords": [
+    "angular",
+    "cli",
+    "core"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/angular-cli.git"
+  },
+  "author": "angular",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/angular-cli/issues"
+  },
+  "homepage": "https://github.com/angular/angular-cli",
+  "engines": {
+    "node": ">= 4.1.0",
+    "npm": ">= 3.0.0"
+  },
+  "dependencies": {
+    "@angular/core": "^2.1.2",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.0-rc.1",
+    "zone.js": "^0.6.26"
+  },
+  "devDependencies": {
+    "typescript": "~2.0.3"
+  }
+}
