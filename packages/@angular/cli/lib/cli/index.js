@@ -23,6 +23,7 @@ function loadCommands() {
     'help': require('../../commands/help').default,
     'lint': require('../../commands/lint').default,
     'version': require('../../commands/version').default,
+    'update': require('../../commands/update').default,
     'completion': require('../../commands/completion').default,
     'doc': require('../../commands/doc').default,
     'xi18n': require('../../commands/xi18n').default,

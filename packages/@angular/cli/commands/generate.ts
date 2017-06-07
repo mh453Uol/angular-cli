@@ -126,6 +126,17 @@ export default Command.extend({
 
     return blueprint.install(blueprintOptions)
       .then(() => {
+        const UpdateTask = require('../tasks/update').default;
+        const updateTask = new UpdateTask({
+          ui: this.ui,
+          project: this.project
+        });
+        return updateTask.run({
+          forceCheck: false,
+          includeUnstable: CliConfig.getValue('update.includePrerelease')
+        });
+      })
+      .then(() => {
         const lintFix = commandOptions.lintFix !== undefined ?
           commandOptions.lintFix : CliConfig.getValue('defaults.lintFix');
 
